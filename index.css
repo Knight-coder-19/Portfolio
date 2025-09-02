@@ -1,16 +1,89 @@
-* {
-    background-color: rgb(192, 216, 216);
-    color:antiquewhite;
-    text
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
 
-.div1 {
-    text-align: center;
-}
-
-.div2 {
-    text-align: left;
+nav {
+    display: flex; /*put an equal distance between all the elements*/
+    justify-content: center;
+    align-items: center; /*center elements in the middle of the nav vert & horz */
+    gap: 20px;
     margin-top: 20px;
+    text-align: center;
+    background: rgb(226, 255, 226);
+    height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 18px;
+    padding: 10px 15px;
+    /*border: 2px solid rgb(146, 39, 39);*/
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgb(189, 102, 102);
+    color: white;
+    scale: 1.1;
+}
+
+.perso_info_sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    border: 2px #f4f4f4 solid;
+    align-items: left;
+    padding: auto;
+    align-items: left;
+    display: grid;
+}
+
+.icon-email {
+    width: 60px;
+    height: 40px;
+}
+
+.icon-github {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-phone {
+    width: 50px;
+    height: 50px;
+}
+
+div {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-family: Georgia, serif;
+    padding: 10px 15px;
+    /*border: 2px solid rgb(146, 39, 39);*/
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+div a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 18px;
+    /*border: 2px solid rgb(146, 39, 39);*/
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
     width: 100%;
-    background: linear-gradient(to right, red, black);
+    height: 50px;
+}
+
+div a:hover {
+    background-color: rgb(189, 102, 102);
+    color: white;
+    scale: 1.1;
+    width: 100%;
+    height: 50px;
 }
