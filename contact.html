@@ -1,40 +1,47 @@
-<DOCTYPE>
-<html lang="eng">
+<!DOCTYPE html>
+<html lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initiale-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <body>
+    <script src="backend/file.js"></script>
+        <div class="div1">
+        <div class="perso_info_sidebar" id="mySidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+            <br>
+            <a class="contact-item">
+                <i class="fas fa-envelope"></i>
+                espoir.biaou@epitech.eu
+            </a>
+            
+            <a class="contact-item">
+                <i class="fas fa-phone"></i>
+                +229 01 53 48 97 79
+            </a>
+            
+            <a class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                Unknown Location
+            </a>
+            
+            <a href="https://github.com/Knight-coder-19" target="_blank" class="contact-item">
+                <i class="fab fa-github"></i>
+                knight-coder-19
+            </a>
+        </div>
         
-            <h1>Portfolio</h1>
-            <h4>Welcome to my portfolio website!</h4>
-            <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            </nav>
-        <div class="perso_info_sidebar">
-            <h1>Contact</h1>
-            <a style="text-decoration: underline;">
-                <i class="fas fa-envelope">
-                </i>
-                <br>espoir.biaou@epitech.eu
-            </a>
-            <a style="text-decoration: underline;">
-                <i class="fas fa-phone">                
-                </i>
-                <br>+229 01 53 48 97 79
-            </a>
-            <a style="text-decoration: underline;">
-                <i class="fas fa-map-marker-alt">
-                </i>
-                <br> Unknown Location
-            </a>
-            <!-- <p style="text-decoration: underline;"><i class="fab fa-linkedin"></i><br>LinkedIn Profile</p> -->
-            <a style="text-decoration: underline;" href="https://github.com/Knight-coder-19">
-                <i class="fab fa-github">
-                </i>
-                <br>knight-coder-19
-            </a>
-        </div>            
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; Contact</button>
+            
+            <div class="portfolio-content">
+                <h1>Portfolio</h1>
+                <h4>Welcome to my portfolio website!</h4>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                </nav>
+            </div>
+        </div>
+    </div>
     </body>
 </html>
