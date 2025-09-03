@@ -28,7 +28,10 @@ nav a:hover {
     
 }
 
-
+/*nav:active {
+    background-color: rgb(47, 78, 11);
+    color: white;
+}*/
 /*
 .perso_info_sidebar {
     position: fixed;
@@ -129,3 +132,33 @@ div a:hover {
     left: 100px;
     right: 100px;
 }
+
+
+.carousel-child {
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #612b2b;
+    border: 1px solid #ccc;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.carousel-container {
+    position: relative;
+    flex-direction: column;
+    align-items: left;
+    gap: 30px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+}
+
+.carousel-child:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
